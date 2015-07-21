@@ -14,6 +14,8 @@
 		DEA36ECE1B5D5C1900A2094B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA36ECD1B5D5C1900A2094B /* Images.xcassets */; };
 		DEA36ED11B5D5C1900A2094B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA36ECF1B5D5C1900A2094B /* LaunchScreen.xib */; };
 		DEA36EDD1B5D5C1900A2094B /* QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA36EDC1B5D5C1900A2094B /* QuizTests.m */; };
+		DEA36EEC1B5D600700A2094B /* BNRQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA36EEA1B5D600700A2094B /* BNRQuizViewController.m */; };
+		DEA36EED1B5D600700A2094B /* BNRQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA36EEB1B5D600700A2094B /* BNRQuizViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		DEA36ED61B5D5C1900A2094B /* QuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA36EDB1B5D5C1900A2094B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA36EDC1B5D5C1900A2094B /* QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizTests.m; sourceTree = "<group>"; };
+		DEA36EE91B5D600700A2094B /* BNRQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRQuizViewController.h; sourceTree = "<group>"; };
+		DEA36EEA1B5D600700A2094B /* BNRQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRQuizViewController.m; sourceTree = "<group>"; };
+		DEA36EEB1B5D600700A2094B /* BNRQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRQuizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +86,12 @@
 		DEA36EBF1B5D5C1900A2094B /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				DEA36EE81B5D5E1300A2094B /* Model */,
+				DEA36EE71B5D5E0B00A2094B /* View */,
+				DEA36EE61B5D5E0400A2094B /* Controller */,
+				DEA36EEE1B5D603C00A2094B /* BookStuff */,
 				DEA36EC41B5D5C1900A2094B /* AppDelegate.h */,
 				DEA36EC51B5D5C1900A2094B /* AppDelegate.m */,
-				DEA36EC71B5D5C1900A2094B /* ViewController.h */,
-				DEA36EC81B5D5C1900A2094B /* ViewController.m */,
 				DEA36ECA1B5D5C1900A2094B /* Main.storyboard */,
 				DEA36ECD1B5D5C1900A2094B /* Images.xcassets */,
 				DEA36ECF1B5D5C1900A2094B /* LaunchScreen.xib */,
@@ -117,6 +124,39 @@
 				DEA36EDB1B5D5C1900A2094B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEA36EE61B5D5E0400A2094B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEA36EC71B5D5C1900A2094B /* ViewController.h */,
+				DEA36EC81B5D5C1900A2094B /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DEA36EE71B5D5E0B00A2094B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DEA36EE81B5D5E1300A2094B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DEA36EEE1B5D603C00A2094B /* BookStuff */ = {
+			isa = PBXGroup;
+			children = (
+				DEA36EE91B5D600700A2094B /* BNRQuizViewController.h */,
+				DEA36EEA1B5D600700A2094B /* BNRQuizViewController.m */,
+				DEA36EEB1B5D600700A2094B /* BNRQuizViewController.xib */,
+			);
+			name = BookStuff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA36EED1B5D600700A2094B /* BNRQuizViewController.xib in Resources */,
 				DEA36ECC1B5D5C1900A2094B /* Main.storyboard in Resources */,
 				DEA36ED11B5D5C1900A2094B /* LaunchScreen.xib in Resources */,
 				DEA36ECE1B5D5C1900A2094B /* Images.xcassets in Resources */,
@@ -219,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA36EEC1B5D600700A2094B /* BNRQuizViewController.m in Sources */,
 				DEA36EC91B5D5C1900A2094B /* ViewController.m in Sources */,
 				DEA36EC61B5D5C1900A2094B /* AppDelegate.m in Sources */,
 				DEA36EC31B5D5C1900A2094B /* main.m in Sources */,
